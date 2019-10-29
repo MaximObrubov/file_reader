@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'nmax'
+
+File.write('test.txt', NMax::Generator::test_string({length: 1000000}))
