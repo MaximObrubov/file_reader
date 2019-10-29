@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'nmax'
 
-NMax::Reader::read_char
+NMax::Reader::get
