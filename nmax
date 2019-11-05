@@ -1,4 +1,9 @@
 #!/usr/bin/env ruby
 require 'nmax'
 
-p NMax::get.join(", ")
+unless (ARGV.count > 0 && NMax::numeric?(ARGV[0]))
+  raise "N parameter not passed"
+end
+n = ARGV[0].to_i
+
+p NMax::get(n).join(", ")

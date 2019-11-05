@@ -1,8 +1,0 @@
-#!/usr/bin/env ruby
-require 'nmax'
-
-DEFAULT_LENGTH = 1000000
-is_param = ARGV.count > 0 && ARGV[0].match?(/^\d+$/)
-l = is_param ? ARGV[0].to_i : DEFAULT_LENGTH
-
-File.write('test.txt', NMax::Generator::test_string({length: l}))

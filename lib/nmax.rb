@@ -2,16 +2,14 @@ require 'generator'
 
 module NMax
   
-  include Generator
+  extend Generator
   
   MAX_LENGTH = 1000
   
   # provides an +array+ of n biggest numbers from stdin
-  def self.get
-    unless (ARGV.count > 0 && numeric?(ARGV[0]))
-      raise "N parameter not passed"
-    end
-    n = ARGV[0].to_i
+  # ==Params:
+  # +n+:: `:integer` amount of selected numbers
+  def self.get(n)
     answer = []
     current = ''
     
