@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.authors = ["MaximObrubov"]
   s.summary = %q{get n bittest numbers from STDIN}
   s.files = [
+    "lib/generator.rb",
     "lib/nmax.rb"
   ]
   s.require_paths = ["lib"]
