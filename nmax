@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 require 'nmax'
 
-NMax::Reader::get
+p NMax::get.join(", ")

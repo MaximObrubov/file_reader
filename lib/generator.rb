@@ -1,5 +1,5 @@
 module Generator
-  
+
   # Creates string that consists from chars and digits
   # ==Params:
   # +length+:: `:integer` length of mecessary string
@@ -7,5 +7,5 @@ module Generator
     o = [('a'..'z'), (0..9)].map(&:to_a).flatten
     (0...length).map { o[rand(o.length)] }.join
   end
-  
+
 end
